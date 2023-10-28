@@ -6,10 +6,10 @@ let winchOuter = AnalogPin.P1
 let rotor = AnalogPin.P2
 let gripper = AnalogPin.P3
 let SERVO_STOP = 90
-let GRIPPER_RELEASED = 130
-let GRIPPER_CLOSED = 40
+let GRIPPER_RELEASED = 130  // 180
+let GRIPPER_CLOSED = 40     // 90
 // basic.clearScreen()
-radio.setGroup(80)
+radio.setGroup(81)
 pins.servoWritePin(winchInner, SERVO_STOP)
 pins.servoWritePin(winchOuter, SERVO_STOP)
 pins.servoWritePin(rotor, SERVO_STOP)
